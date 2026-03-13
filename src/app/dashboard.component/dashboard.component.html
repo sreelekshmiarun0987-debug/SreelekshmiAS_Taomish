@@ -1,0 +1,31 @@
+<h2>Dashboard</h2>
+
+<p>Role: {{role}}</p>
+
+<button (click)="viewRecords()">View Records</button>
+
+<div *ngIf="records">
+<pre>{{records | json}}</pre>
+</div>
+
+<div *ngIf="role!='USER'">
+
+<h3>Update Record</h3>
+
+<input [(ngModel)]="updateId" placeholder="Record ID">
+
+<input [(ngModel)]="updateName" placeholder="New Name">
+
+<button (click)="updateRecord()">Update</button>
+
+</div>
+
+<div *ngIf="role=='ADMIN'">
+
+<h3>Delete Record</h3>
+
+<input [(ngModel)]="deleteId" placeholder="Record ID">
+
+<button (click)="deleteRecord()">Delete</button>
+
+</div>

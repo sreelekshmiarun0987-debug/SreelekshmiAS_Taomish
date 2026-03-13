@@ -1,0 +1,25 @@
+body{
+font-family:Arial;
+padding:40px;
+background:#f4f4f4;
+}
+
+.login-box,.actions{
+background:white;
+padding:15px;
+margin-bottom:20px;
+width:300px;
+}
+
+input{
+display:block;
+margin:5px 0;
+padding:8px;
+width:100%;
+}
+
+button{
+padding:8px;
+margin-top:5px;
+width:100%;
+}

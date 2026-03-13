@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>RBAC Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Role Based Access Control</h2>
+
+<div class="login-box">
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<hr>
+
+<div class="actions">
+
+<button onclick="viewRecords()">View Records</button>
+
+<input id="updateId" placeholder="Record ID">
+
+<input id="updateName" placeholder="New Name">
+
+<button onclick="updateRecord()">Update Record</button>
+
+<input id="deleteId" placeholder="Record ID">
+
+<button onclick="deleteRecord()">Delete Record</button>
+
+</div>
+
+<pre id="output"></pre>
+
+<script src="script.js"></script>
+
+</body>
+</html>
